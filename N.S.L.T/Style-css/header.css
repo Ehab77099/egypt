@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    min-height: 100vh;
+}
+.container1{
+  position: relative;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 3px  rgb(104, 104, 104);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-transform: capitalize;
+}
+
+
+.container1 .logo img{
+    width: 170px;
+    cursor: pointer;
+}
+
+
+.nav1{
+    width: 70%;
+}
+.nav1 ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+
+
+.nav1 li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+    text-transform: capitalize;
+}
+
+
+.drop_menu{
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+}
+
+.drop_menu .translator svg{
+    fill: black;
+}
+
+.drop_menu .translator{
+    cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+}
+
+ .drop_menu .drop{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(27, 25, 25, 0.781);
+    position: absolute;
+    border-radius: 5px;
+    z-index: 999;
+    text-align: center;
+    list-style: none;
+
+}
+.drop_menu .drop div{
+    width: 100%;
+    text-align: end;
+    color: white;
+    
+}
+.drop_menu .drop div a{
+    margin-right: 5px;
+    cursor: pointer;
+}
+.drop a{
+    margin-left: 10px;
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+}
+
+.drop li{
+  padding: 10px;
+
+}
+
+
+
+
+
+
+
+ .drop_menu .drop li a:hover{
+    border-bottom: 2px rgb(255, 255, 255) solid;
+}
+
+.nav1 ul li a:hover{
+border-bottom: 2px solid rgb(3, 3, 3);
+}
+
+
+
+.container1 .menu{
+    margin-right: 10px;
+}
+
+
+.container1 .menu svg{
+    fill: black;
+}
+@media (min-width:891px){
+    .container1 .menu{
+        display: none;
+    }
+    }
+    
+    
+    @media (max-width:890px){
+        .nav1{
+            display: none;
+        }
+        .drop_menu{
+            display: none;
+        }
+    
+        .nav2 .drop_menu{
+            display: flex;
+        }
+        
+    }
+
+/* ///////////////////////////////////// */
+
+
+
+
+
+
+.container1 .nav2{
+    position: fixed;
+    width: 260px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.759);
+    backdrop-filter: blur(5px);
+right: 0;
+    top: 0 ;
+display: none;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+z-index: 999;
+overflow-y: auto;
+}
+
+
+.nav2 .close{
+    margin: 50px 0;
+    color: white;
+    cursor: pointer;
+}
+
+
+.nav2 .close svg{
+fill: white;
+}
+
+
+
+
+
+.nav2 .drop_menu_nav2 .translator a{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav2 .drop_menu_nav2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    width: 200px;
+}
+
+.nav2 .drop_menu_nav2 .drop_menu{
+    display:none;
+align-items: center;
+height: 200px;
+width: 90%;
+}
+
+.nav2 .drop_menu_nav2 .drop_menu .close_drop{
+    color: white;
+    text-align: start;
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav2 .drop_menu_nav2 .drop_menu li{
+    border: 2px solid white;
+    width: 90%;
+    border-radius: 10px;
+}
+
+
+.nav2 .drop_menu_nav2 .drop_menu li:hover{
+    background: orange;
+}
+.nav2 .drop_menu .translator svg{
+    fill:white;
+}
+
+
+.nav2 ul li{
+    text-align: center;
+        width: 300px;
+    }
+   
+.nav2 ul{
+    margin-left: 15px;
+    padding: 10px 0;
+    width: 50%;
+   min-height: 300px;
+list-style: none;
+overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+gap: 20px;
+    align-items: center;
+}
+
+.nav2 ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.nav2 .menu_bar {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav2 .menu_bar li a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* ///////////////////////flags////////////////////////////////////////////// */
+.flags{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 600;
+    position: absolute;
+    top: 100%;
+}
+
+.flags .images{
+width: 90%;
+background: rgba(80, 80, 80, 0.466);
+height: 50px;
+border-bottom-left-radius: 800px;
+border-bottom-right-radius: 800px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+.images img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.images img:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width:650px){
+    .images img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .flags .images{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:420px){
+    .images img{
+        width: 30px;
+        height:30px;
+    }
+
+    .flags .images{
+        width: 100%;
+    }
+}
+
+/* ////////////////arrow///////////////////////////////// */
+
+
+
+
+
+
+
+.arrow-up svg{
+    width: 50px;
+    height: 50px;
+    fill: rgb(15, 15, 15);
+}
+
+.arrow-up{
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    background-color: rgb(240, 240, 240);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 900;
+    cursor: pointer;
+}
+
+
+
+
+
+.chat svg{
+    width: 50px;
+    height: 50px;
+}
+.chat{
+position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 900;
+}
+
+
+
+

@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contact{
+    background: rgb(205, 205, 205);
+    min-height: 110vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+
+.contact h2 ,p{
+    width: 500px;
+    text-align: start;
+    margin: 5px 0;
+}
+
+.contact .m{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.contact p{
+color: rgb(51, 49, 49);
+margin-bottom: 15px;
+
+}
+
+.contact form{
+    width: 500px;
+    min-height: 300px;
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    padding: 30px 15px;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+form .form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form .name_email{
+    display: flex;
+    gap: 10px;
+}
+
+
+form .name_email div {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    
+}
+
+form .name_email div input{
+    width: 200px;
+padding: 4px;
+padding-left: 10px;
+    border: none;
+    border-radius: 4px;
+
+}
+
+
+form .name_email div input::placeholder{
+    text-transform: capitalize;
+    color: rgb(93, 93, 93);
+}
+
+form div label{
+margin-bottom: 5px;
+}
+
+form .message{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 5px;
+
+}
+
+form .message  textarea{
+  width: 100%;
+  height: 60px;
+resize: none;
+border: none;
+padding: 0 5px;
+padding-top: 10px;
+padding-left: 10px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-radius: 5px;
+  
+}
+
+
+form .btn{
+    text-align: end;
+    margin-right: 20px;
+}
+
+
+form .btn input{
+    width: 100px;
+    border:1px solid rgb(237, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    background-color: rgb(237, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+
+form .btn input:hover{
+    background: rgba(0, 0, 0, 0.752);
+    border: 1px solid white;
+}
+
+
+
+@media (max-width:530px){
+    .contact form{
+        width: 300px;
+    }
+
+    form .name_email{
+        flex-direction: column;
+    }
+
+    form .name_email div{
+        align-items: center;
+    }
+
+    form input::placeholder{
+        text-align: center;
+    }
+   .contact h2 ,p{
+        width: 50%;
+        text-align: center;
+    }
+
+    
+}
+
+
+.footer .design p{
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.500) ,rgba(0, 0, 0, 0.500) ) , url(../images/pages/services.jpg) no-repeat fixed;
+    background-size: cover;
+overflow-x: hidden;
+
+}
+
+.services{
+ 
+width: 100%;
+min-height: 110vh;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: white;
+
+}
+
+.services h1{
+    margin-top: 60px;
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+}
+
+.services .box{
+    width: 98%;
+    min-height: 200px;
+    margin-top: 40px ;
+    border-radius: 10px;
+  
+}
+
+
+.services .box p{
+    font-size: 20px;
+}
+
+
+
+.services .box img{
+width: 50%;
+border-radius: 10px;
+
+}
+
+
+.services .box{
+    display: flex;
+    align-items: center;
+    background: rgba(92, 92, 92, 0.638);
+margin-bottom: 10px;
+
+}
+
+.services div .content{
+    display: flex;
+    border: none;
+    flex-direction: column;
+    gap: 20px;
+    word-spacing: 2px;
+    margin-left: 5px;
+    justify-content: center;
+}
+
+
+@media (max-width:750px){
+    .services .box{
+        flex-direction: column;
+    }
+
+    .services div .content{
+        align-items: center;
+        text-align: center;
+    }
+ .services .box img{
+    width: 100%;
+ }
+}
+
+
+
+
+/* ///////////// */
+
+.services  .we{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.services .content li{
+    text-align: center;
+    list-style: none;
+    margin: 40px 0;
+}
+
+
+
+.services .content a button{
+    width: 200px;
+    padding: 10px;
+    border-top-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    background: blue;
+    color: white;
+    font-size: 1.1rem;
+border: none;
+cursor: pointer;
+}
+
+
+.services .content a button:hover{
+    transition:  0.3s linear  ;
+    background-color: rgba(0, 0, 0, 0.655);
+}
+
