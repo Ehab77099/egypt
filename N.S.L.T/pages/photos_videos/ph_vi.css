@@ -1,0 +1,165 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #232323;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+}
+header {
+    margin-top: 100px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    
+}
+
+.end{
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+
+
+}
+
+.align{
+    width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.gallery_video{
+width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px; 
+}
+.gallery-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+.gallery-item img, .gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* تغطية الصندوق بالكامل */
+    display: block;
+}
+
+
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.lightbox-content {
+    position: relative;
+    width: 90%; /* عرض الصندوق */
+    height: 90%; /* ارتفاع الصندوق */
+    max-width: 1200px; /* أقصى عرض */
+    max-height: 800px; /* أقصى ارتفاع */
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden; /* لمنع ظهور الفراغات */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lightbox-content img, .lightbox-content video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width:900px){
+
+
+    .lightbox-content{
+        width: 90%; /* عرض الصندوق */
+    height: 90%; /* ارتفاع الصندوق */
+    max-width: 1000px; /* أقصى عرض */
+    max-height: 600px;
+    }
+}
+
+
+@media (max-width:680px){
+
+
+.lightbox-content{
+width: 90%; /* عرض الصندوق */
+height: 90%; /* ارتفاع الصندوق */
+max-width: 500px; /* أقصى عرض */
+max-height: 500px;
+}
+
+
+}
+
+@media (max-width:540px){
+
+
+.lightbox-content{
+width: 100%; /* عرض الصندوق */
+height: 100%; /* ارتفاع الصندوق */
+max-width: 500px; /* أقصى عرض */
+max-height: 300px;
+}
+
+}
+.c {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+/* Sections for Images and Videos */
+.section-title {
+    font-size: 2rem;
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
